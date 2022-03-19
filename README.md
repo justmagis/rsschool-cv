@@ -1,0 +1,1 @@
+[https://justmagis.github.io/rsschool-cv/cv](https://justmagis.github.io/rsschool-cv/cv)
