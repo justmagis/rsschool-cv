@@ -13,7 +13,7 @@ body{
 }
 .wrapper {
     min-height: 100%;
-    background: #000;
+background: #000;
     width: 100%
 }
 .container {
@@ -88,4 +88,138 @@ body{
     font-size: 20px;
     letter-spacing: 0.145em;
     margin-bottom: 10px;
+}
+
+/*2. Content section */
+
+.main__content {
+    display: flex;
+    flex-grow: 1;
+}
+
+/*2.1  Side content */
+.aside {
+    display: flex;
+    width: 30%;
+    background: #1a1a21;
+    flex-direction: column;
+    color: aliceblue;
+    padding-left: 3%;
+    padding-top: 2%;
+}
+.education {
+    margin-bottom: 50px;
+}
+.side__header {
+    font-size: 30px;
+}
+.divider {
+    height: 2px;
+    margin-bottom: 10px;
+}
+.divider_yellow {
+    background: #fecc00;
+}
+.education__content {
+}
+.ebucation__place {
+}
+.education__title {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 21px;
+}
+.education__title>a:hover {
+    text-decoration: underline;
+    transition: all 0.5s;
+    color: #fecc00;
+}
+.education__title>a{
+    display: inline-block;
+}
+.education__title>a::before {
+    content: '';
+    position: absolute;
+    background: aliceblue;
+    height: 5px;
+    width: 5px;
+    top: 10px;
+    left: -15px;
+    border-radius: 5px;
+}
+.education__title>a:hover::before {
+    content: '';
+    position: absolute;
+    background: #fecc00;
+    height: 12px;
+    width: 12px;
+    top: 7px;
+    left: -18px;
+    border-radius: 12px;
+    transition: all 0.5s;
+}
+.education__title:first-line{
+    letter-spacing: 0.06em;
+}
+.education__subtitle {
+    margin: 10px 0 10px;
+    padding-left: 4%;
+    font-size: 18px;
+}
+.skills {
+    margin-bottom: 50px;
+}
+.skills__title {
+    text-transform: uppercase;
+}
+.skills__list {
+
+}
+.skills__item {
+    margin: 20px 0px 20px 0px;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    font-size: 16px;
+}
+.skills__html {
+    background-image: url(/assets/icons/html.svg);
+}
+.skills__css {
+    background-image:url(/assets/icons/css.svg);
+}
+.skills__sass {
+    background-image:url(/assets/icons/sass.svg);
+    background-position: 3px 0;
+
+}
+.skills__javascript {
+    background-image:url(/assets/icons/javascript.svg);
+}
+.skills__bootstrap {
+    background-image:url(/assets/icons/bootstrap.svg);
+}
+.skills__github {
+    background-image:url(/assets/icons/github.svg);
+}
+.skills__avocode {
+    background-image:url(/assets/icons/avocode.svg);
+    background-position: 6px 0;
+}
+
+/* 2.2  Main */
+
+.main {
+    display: flex;
+    width: 70%;
+    color: #1a1a21;
+    background: aliceblue;
+}
+.main__about {
+}
+.main__header {
+}
+.main__descr {
 }
