@@ -129,12 +129,14 @@ body {
     margin-bottom: 10px;
 }
 
+
 /*2. Content section */
 
 .main__content {
     display: flex;
     flex-grow: 1;
 }
+
 
 /*2.1  Side content */
 .aside {
@@ -158,10 +160,6 @@ body {
 }
 .divider_yellow {
     background: #fecc00;
-}
-.education__content {
-}
-.ebucation__place {
 }
 .education__title {
     position: relative;
@@ -211,8 +209,6 @@ body {
 .skills__title {
     text-transform: uppercase;
 }
-.skills__list {
-}
 .skills__item {
     margin: 20px 0px 20px 0px;
     padding-left: 50px;
@@ -246,20 +242,113 @@ body {
     background-position: 6px 0;
 }
 
+
+
+
 /* 2.2  Main */
 
 .main {
     display: flex;
     width: 70%;
     color: #1a1a21;
-    background: aliceblue;
+    background: #ffffff;
+}
+
+.main__container {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 3%;
 }
 .main__about {
+    display: flex;
+    flex-direction: column;
 }
-.main__header {
+
+.about__title {
+    text-transform: uppercase;
+    text-align: end;
+    font-size: 30px;
 }
-.main__descr {
+.title {
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
+.divider_black {
+    background: #000;
+    margin-bottom: 20px;
+}
+.about__text {
+    font-weight: 400;
+    margin: 20px 0 20px;
+}
+.about__strength {
+    margin-left: 40px;
+}
+.strengths__list {
+    font-weight: 400;
+}
+.strength__item {
+    position: relative;
+    margin: 10px 0 10px 25px;
+}
+.about__languages {
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+.languages__list {
+    font-weight: 400;
+}
+.language__item {
+    position: relative;
+    margin: 10px 0 10px 25px;
+}
+.language__item::before,
+.strength__item::before {
+    position: absolute;
+    content: "";
+    background: #fff;
+    top: 7px;
+    left: -12px;
+    height: 6px;
+    width: 6px;
+    border: solid 1px #000;
+    border-radius: 50%;
+}
+
+.code__title {
+    text-transform: uppercase;
+    text-align: end;
+    font-size: 30px;
+}
+
+.divider_black {
+    margin-top: 0;
+}
+.code__content {
+    margin-left: 5%;
+    margin-right: 5%;
+    color: gray;
+    height: 10%;
+}
+.code {
+    display: block;
+    height: 150px;
+    background: #1a1a21;
+}
+.code-keyword {
+    color: rgb(89, 59, 170);
+}
+.code-function-name {
+    color: rgb(149, 30, 30);
+}
+
+
+
+
+
+
 
 /* 3. Footer section */
 
@@ -307,7 +396,6 @@ body {
 .phone__number {
 position: relative;
 }
-
 .footer__content {
     height: 100%;
     width: 70%;
