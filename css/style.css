@@ -353,7 +353,7 @@ body {
 /* 3. Footer section */
 
 .footer {
-    height: 20vh;
+    height: 230px;
 }
 .footer__container {
     height: 100%;
@@ -370,34 +370,67 @@ body {
     text-transform: uppercase;
     color: aliceblue;
 }
-.contacts__phone {
+.contacts_item {
     position: relative;
     margin: 30px 0 0 50px;
     color: aliceblue;
 }
-
-.phone__number::before {
+.contacts_item::before {
     position: absolute;
-    content: 'Phone';
-    left: 0px;
+    left: -3px;
+    top: -1px;
     background: #1a1a21;
     z-index: 1;
-    width: 140px;
+    height: 40px;
 }
-.phone__number:hover:before {
+.contact_phone::before {
+    content: "Phone";
+    width: 145px;
+    height: 40px;
+}
+.contact_email::before {
+    content: "Email";
+    width: 220px;
+    height: 40px;
+}
+.contacts_item:hover:before {
     position: absolute;
-    content: 'Phone:';
+    top: -1px;
+    background: #1a1a21;
+    z-index: 1;
+    height: 40px;
+}
+.contact_phone:hover:before {
+    content: "Phone:";
     left: -69px;
-    background: #1a1a21;
-    z-index: 1;
     width: 30px;
-    transition: all 1s;
+    transition: left 0.8s, width 1.4s;
 }
-.phone__number {
-position: relative;
+.contact_email:hover:before {
+    content: "Email:";
+    left: -62px;
+    width: 30px;
+    transition: left 0.8s, width 1.2s;
 }
 .footer__content {
     height: 100%;
     width: 70%;
     background: #fecc00;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer__github {
+    height: 60%;
+}
+.footer__rsschool {
+    height: 60%;
+}
+.footer__image {
+    height: 100%;
+}
+.footer__date {
+    text-transform: uppercase;
+    width: 15%;
+    padding-right: 5%;
 }
