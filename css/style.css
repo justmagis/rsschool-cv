@@ -129,14 +129,12 @@ body {
     margin-bottom: 10px;
 }
 
-
 /*2. Content section */
 
 .main__content {
     display: flex;
     flex-grow: 1;
 }
-
 
 /*2.1  Side content */
 .aside {
@@ -219,31 +217,28 @@ body {
     font-size: 16px;
 }
 .skills__html {
-    background-image: url(/assets/icons/html.svg);
+    background-image: url(../assets/icons/html.svg);
 }
 .skills__css {
-    background-image: url(/assets/icons/css.svg);
+    background-image: url(../assets/icons/css.svg);
 }
 .skills__sass {
-    background-image: url(/assets/icons/sass.svg);
+    background-image: url(../assets/icons/sass.svg);
     background-position: 3px 0;
 }
 .skills__javascript {
-    background-image: url(/assets/icons/javascript.svg);
+    background-image: url(../assets/icons/javascript.svg);
 }
 .skills__bootstrap {
-    background-image: url(/assets/icons/bootstrap.svg);
+    background-image: url(../assets/icons/bootstrap.svg);
 }
 .skills__github {
-    background-image: url(/assets/icons/github.svg);
+    background-image: url(../assets/icons/github.svg);
 }
 .skills__avocode {
-    background-image: url(/assets/icons/avocode.svg);
+    background-image: url(../assets/icons/avocode.svg);
     background-position: 6px 0;
 }
-
-
-
 
 /* 2.2  Main */
 
@@ -343,12 +338,6 @@ body {
 .code-function-name {
     color: rgb(149, 30, 30);
 }
-
-
-
-
-
-
 
 /* 3. Footer section */
 
