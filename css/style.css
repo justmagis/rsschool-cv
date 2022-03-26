@@ -1,20 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
 
 /*1. Header section */
-html,body{
+html,
+body {
     height: 100%;
 }
-body{
+body {
     line-height: 1.2;
     font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 600;
 }
 .wrapper {
     min-height: 100%;
-background: #000;
-    width: 100%
+    background: #000;
+    width: 100%;
 }
 .container {
     margin: 0 auto;
@@ -34,7 +34,7 @@ background: #000;
     overflow: hidden;
     display: flex;
 }
-.header__photo > img  {
+.header__photo > img {
     width: 100%;
 }
 .header__content {
@@ -55,7 +55,7 @@ background: #000;
     position: relative;
     margin-right: 20px;
 }
-.header_menu_item::before{
+.header_menu_item::before {
     content: "";
     position: absolute;
     height: 2px;
@@ -64,10 +64,10 @@ background: #000;
     background-color: #1a1a21;
     transition: 0.5s width ease-in-out;
 }
-.header_menu_item:hover::before{
+.header_menu_item:hover::before {
     width: 100%;
 }
-.header__info {    
+.header__info {
     height: 30%;
     display: flex;
     background: #fecc00;
@@ -129,16 +129,16 @@ background: #000;
     text-transform: uppercase;
     font-size: 21px;
 }
-.education__title>a:hover {
+.education__title > a:hover {
     text-decoration: underline;
     transition: all 0.5s;
     color: #fecc00;
 }
-.education__title>a{
+.education__title > a {
     display: inline-block;
 }
-.education__title>a::before {
-    content: '';
+.education__title > a::before {
+    content: "";
     position: absolute;
     background: aliceblue;
     height: 5px;
@@ -147,8 +147,8 @@ background: #000;
     left: -15px;
     border-radius: 5px;
 }
-.education__title>a:hover::before {
-    content: '';
+.education__title > a:hover::before {
+    content: "";
     position: absolute;
     background: #fecc00;
     height: 12px;
@@ -158,7 +158,7 @@ background: #000;
     border-radius: 12px;
     transition: all 0.5s;
 }
-.education__title:first-line{
+.education__title:first-line {
     letter-spacing: 0.06em;
 }
 .education__subtitle {
@@ -173,7 +173,6 @@ background: #000;
     text-transform: uppercase;
 }
 .skills__list {
-
 }
 .skills__item {
     margin: 20px 0px 20px 0px;
@@ -188,24 +187,23 @@ background: #000;
     background-image: url(/assets/icons/html.svg);
 }
 .skills__css {
-    background-image:url(/assets/icons/css.svg);
+    background-image: url(/assets/icons/css.svg);
 }
 .skills__sass {
-    background-image:url(/assets/icons/sass.svg);
+    background-image: url(/assets/icons/sass.svg);
     background-position: 3px 0;
-
 }
 .skills__javascript {
-    background-image:url(/assets/icons/javascript.svg);
+    background-image: url(/assets/icons/javascript.svg);
 }
 .skills__bootstrap {
-    background-image:url(/assets/icons/bootstrap.svg);
+    background-image: url(/assets/icons/bootstrap.svg);
 }
 .skills__github {
-    background-image:url(/assets/icons/github.svg);
+    background-image: url(/assets/icons/github.svg);
 }
 .skills__avocode {
-    background-image:url(/assets/icons/avocode.svg);
+    background-image: url(/assets/icons/avocode.svg);
     background-position: 6px 0;
 }
 
@@ -222,4 +220,57 @@ background: #000;
 .main__header {
 }
 .main__descr {
+}
+
+/* 3. Footer section */
+
+.footer {
+    height: 20vh;
+}
+.footer__container {
+    height: 100%;
+    display: flex;
+}
+.contacts {
+    height: 100%;
+    background: #1a1a21;
+    width: 30%;
+    padding-left: 3%;
+    padding-top: 0.5%;
+}
+.contacts__title {
+    text-transform: uppercase;
+    color: aliceblue;
+}
+.contacts__phone {
+    position: relative;
+    margin: 30px 0 0 50px;
+    color: aliceblue;
+}
+
+.phone__number::before {
+    position: absolute;
+    content: 'Phone';
+    left: 0px;
+    background: #1a1a21;
+    z-index: 1;
+    width: 140px;
+}
+.phone__number:hover:before {
+    position: absolute;
+    content: 'Phone:';
+    left: -69px;
+    background: #1a1a21;
+    z-index: 1;
+    width: 30px;
+    transition: all 1s;
+}
+.phone__number {
+position: relative;
+}
+
+.footer__content {
+    height: 100%;
+    width: 70%;
+    background: #fecc00;
 }
